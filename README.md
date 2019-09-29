@@ -1,5 +1,15 @@
 # mider
 Utility to evade root detection where Magisk hide is insufficient.
+# Usage
+Place somewhere it can execute, or as I've found, you can execute from internal storage by prefacing it with `sh` as in the aliases described later.
+`mider` will display usage.\n
+`mider hide` will hide root files and Magisk.\n
+`mider unhide` will restore everything.
+# Things to be aware of
+The Magisk app REALLY doesn't handle it's files being misplaced.
+While I have yet to notice adverse effects, I recommend avoiding opening the app while root is hidden.
+Upon restoring, if the Magisk app reports no installation, it is necessary to kill the app, after which it will function normally.
+TODO: Investigate the implications of killing and restarting it on restore.
 # Requirements
 Not fully sure what Magisk versions would be supported, but it was created as of 19.
 I will check back on the changelogs as to when the current directory structure was put in place.
