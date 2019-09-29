@@ -30,6 +30,7 @@ Simply modify these to fit your environment.
 This allows for the super easy one line usage I show in the screenshot.
 Explanation: `-c` sends a command to be executed as root, leaving you in your own session, so you aren't root when it's done.
 This is nice because you don't need to worry about accidentally leaving an open root session.
+To make things even easier, Terminal Emulator (jackpal.androidterm) has the option "Initial Command" where this alias may be entered so you don't have to worry about trying to figure out a `.profile` or other rc file.
 # Security bonus
 Most users who root, often don't need it after boot, or after they've done what they wanted.
 Even in other use cases, root is usually something you don't need often.
