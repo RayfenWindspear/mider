@@ -1,5 +1,9 @@
 # mider
 Utility to evade root detection where Magisk hide is insufficient.
+# Disclaimer
+I do not, will not, and will NEVER condone nor support nefarious uses of this utility of any kind.
+Including, but not limited to, cheating, hacking, malware, spyware, etc.<br/>
+If you have come here for any such purpose, please kindly show yourself out.
 # Usage
 Place somewhere it can execute, or as I've found, you can execute from internal storage by prefacing it with `sh` as in the aliases described later.<br/>
 `mider` will display usage.<br/>
