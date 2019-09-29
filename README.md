@@ -4,7 +4,8 @@ Utility to evade root detection where Magisk hide is insufficient.
 Place somewhere it can execute, or as I've found, you can execute from internal storage by prefacing it with `sh` as in the aliases described later.<br/>
 `mider` will display usage.<br/>
 `mider hide` will hide root files and Magisk.<br/>
-`mider unhide` will restore everything.
+`mider unhide` will restore everything.<br/>
+May add as a Magisk module in the future.
 # Things to be aware of
 The Magisk app REALLY doesn't handle it's files being misplaced.
 While I have yet to notice adverse effects, I recommend avoiding opening the app while root is hidden.
