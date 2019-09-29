@@ -8,10 +8,10 @@ Pretty straightforward and simple shell script.
 It simply moves all of Magisk's sensitive files to a temporary directory.
 The unhide feature just moved them back and relinks them.
 Basically, you are temporarily unrooted while hidden, and it's restored when unhidded.
-Note that the contents of /sbin are restored at boot by a Magisk modified boot image.
+Note that the contents of `/sbin` are restored at boot by Magisk's boot image.
 # Why it might be necessary
 Kind of a long story, but to keep it short, basicIntegrity and CTSprofile that most SafetyNet check apps return are... crude at best.
-SafetyNet does MUCH more than these checks... details to be added later.
+SafetyNet does MUCH more than these checks... details on my research and findings to be added later.
 # Tip to make the process easier
 I got really annoyed having to execute the thing from my localstorage `/sdcard`, so I made some aliases to make things even easier.
 Simply modify these to fit your environment.
@@ -25,3 +25,9 @@ Even in other use cases, root is usually something you don't need often.
 Disabling it entirely like this can help protect your device from potential threats targeting root.
 Personally, I immediately run `mider hide` immediately after Magisk's modules have initialized, and my kernel settings have been applied.
 The only thing I have use for it afterwards is if I have need to lift my clock restrictions for a more demanding app.
+# Alternative easier solution
+So, this was also my solution's alpha, if you will.
+As `/sbin/` is restored at boot, a simple `su -c rm -rf /sbin` works if you don't even care to have root after bootup.
+However, some modules also operate from `/sbin`, so this disrupts them too.
+You could just delete the specific files that `mider` does though.
+I think I'll add that as a 3rd option as a future feature. 
