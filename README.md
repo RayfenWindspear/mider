@@ -28,7 +28,10 @@ Note that the contents of `/sbin` are restored at boot by Magisk's boot image.
 Kind of a long story, but to keep it short, basicIntegrity and CTSprofile that most SafetyNet check apps return are... crude at best.
 SafetyNet does MUCH more than these checks...
 The bulk of my research on the matter is summed up nicely by this awesome fellow's write-up found here:<br/>
-https://koz.io/inside-safetynet/
+https://koz.io/inside-safetynet/<br/><br/>
+The gist of it is that the API returns a bunch of anonymized data regarding the state of your device, which an app can send serverside to check.
+One such attestation reports if root exists.
+Most apps likely don't bother checking most of this extra info, or they are unaware that it is available.
 # Tip to make the process easier
 I got really annoyed having to execute the thing from my localstorage `/sdcard`, so I made some aliases to make things even easier.
 Simply modify these to fit your environment.
