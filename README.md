@@ -26,7 +26,9 @@ Basically, you are temporarily unrooted while hidden, and it's restored when unh
 Note that the contents of `/sbin` are restored at boot by Magisk's boot image.
 # Why it might be necessary
 Kind of a long story, but to keep it short, basicIntegrity and CTSprofile that most SafetyNet check apps return are... crude at best.
-SafetyNet does MUCH more than these checks... details on my research and findings to be added later.
+SafetyNet does MUCH more than these checks...
+The bulk of my research on the matter is summed up nicely by this awesome fellow's write-up found here:<br/>
+https://koz.io/inside-safetynet/
 # Tip to make the process easier
 I got really annoyed having to execute the thing from my localstorage `/sdcard`, so I made some aliases to make things even easier.
 Simply modify these to fit your environment.
