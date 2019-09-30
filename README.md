@@ -13,8 +13,10 @@ May add as a Magisk module in the future.
 # Things to be aware of
 The Magisk app REALLY doesn't handle it's files being misplaced.
 While I have yet to notice adverse effects, I recommend avoiding opening the app while root is hidden.
-Upon restoring, if the Magisk app reports no installation, it is necessary to kill the app, after which it will function normally.
-TODO: Investigate the implications of killing and restarting it on restore.
+Upon restoring, if the Magisk app reports no installation, it is necessary to kill the app, after which it will function normally.<br/>
+TODO: Investigate the implications of killing and restarting it on restore.<br/>
+Also, as a consequence of the app not seeing a valid install, you'll be inundated with update notifications unless you disable automatic checks.<br/>
+TODO: Peruse Masgisk sources and determine a viable workaround that allows update checks to still be aware of the version... I doubt it can be done, however.
 # Requirements
 Not fully sure what Magisk versions would be supported, but it was created as of 19.
 I will check back on the changelogs as to when the current directory structure was put in place.
